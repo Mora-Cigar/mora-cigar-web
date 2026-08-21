@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mora Cigar | Premium Handmade</title>
+  <meta name="description" content="Mora Cigar — Premium Handmade. No es humo, es presencia.">
+  <style>
+    :root{
+      --bg:#05080a; --panel:#0a1010; --gold:#d9ad4d; --gold2:#8d671e;
+      --green:#0f5f43; --green2:#18a66d; --text:#f1f1ef; --muted:#c6c8c7;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 70% 0%,#11221d 0,#05080a 42%),var(--bg);
+      color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    .wrap{max-width:1200px;margin:auto;padding:0 24px}
+    nav{position:sticky;top:0;z-index:10;background:rgba(5,8,10,.92);backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(217,173,77,.28)}
+    nav .inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;color:var(--gold);font-size:24px;letter-spacing:1px}
+    .brand img{width:44px;height:44px;object-fit:contain;border-radius:50%}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+    nav a:hover{color:var(--gold)}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px;padding:70px 0}
+    .eyebrow{color:var(--gold);letter-spacing:4px;font-size:13px;text-transform:uppercase}
+    h1{font-family:Georgia,serif;font-size:clamp(54px,8vw,100px);line-height:.95;margin:16px 0;
+      color:#e7bd64;text-shadow:0 0 30px rgba(217,173,77,.15)}
+    .hero p{max-width:620px;font-size:20px;color:var(--muted)}
+    .motto{font-family:Georgia,serif;color:var(--gold);font-size:28px;margin:28px 0}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:14px 22px;border-radius:3px;text-decoration:none;font-weight:bold}
+    .primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#15110a}
+    .secondary{border:1px solid var(--gold);color:var(--gold)}
+    .hero-art{position:relative;text-align:center}
+    .hero-art img{width:min(100%,520px);filter:drop-shadow(0 25px 50px rgba(0,0,0,.65))}
+    .section{padding:90px 0;border-top:1px solid rgba(217,173,77,.16)}
+    .section h2{font-family:Georgia,serif;font-size:46px;margin:0 0 15px;color:var(--gold)}
+    .section-intro{max-width:750px;color:var(--muted);font-size:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+    .card{padding:30px;background:linear-gradient(145deg,rgba(20,37,32,.85),rgba(7,10,11,.95));
+      border:1px solid rgba(217,173,77,.35);border-radius:14px}
+    .card h3{color:var(--gold);font-family:Georgia,serif;font-size:25px;margin-top:0}
+    .product{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .product img{width:100%;border-radius:14px;border:1px solid rgba(217,173,77,.45)}
+    .contact{display:grid;grid-template-columns:1fr 330px;gap:45px;align-items:center}
+    .contact-list{display:grid;gap:14px}
+    .contact-item{padding:18px 20px;border-left:3px solid var(--gold);background:rgba(255,255,255,.025)}
+    .contact-item a{color:var(--text);text-decoration:none}
+    .qr{text-align:center;background:#fff;padding:15px;border-radius:14px}
+    .qr img{width:220px;max-width:100%}
+    .qr-label{color:#222;font-weight:bold;margin:8px 0 0}
+    footer{text-align:center;padding:35px;color:#aaa;border-top:1px solid rgba(217,173,77,.18)}
+    @media(max-width:850px){
+      nav .links{display:none}.hero,.product,.contact{grid-template-columns:1fr}.hero{padding:55px 0}
+      .grid{grid-template-columns:1fr}.hero-art{order:-1}.section{padding:65px 0}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap inner">
+    <div class="brand"><img src="assets/mora-cigar-logo.png" alt="Mora Cigar"> MORA CIGAR</div>
+    <div class="links">
+      <a href="#esencia">Esencia</a><a href="#premium">Premium</a><a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Premium Handmade · República Dominicana</div>
+      <h1>MORA<br>CIGAR</h1>
+      <div class="motto">“No es humo, es presencia.”</div>
+      <p>Puros elaborados con carácter, detalle y una identidad diseñada para quienes valoran una experiencia verdaderamente premium.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/18099861510" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+        <a class="btn secondary" href="#contacto">Ver contacto</a>
+      </div>
+    </div>
+    <div class="hero-art"><img src="assets/mora-cigar-logo.png" alt="Mora Cigar Premium Handmade"></div>
+  </section>
+
+  <section id="esencia" class="section">
+    <h2>Nuestra esencia</h2>
+    <p class="section-intro">Mora Cigar representa presencia, elegancia y dedicación artesanal. Cada detalle de la marca está pensado para transmitir una experiencia distinguida.</p>
+    <div class="grid">
+      <div class="card"><h3>Premium</h3><p>Una presentación elegante con una identidad visual exclusiva en negro, verde vivo y acabados dorados.</p></div>
+      <div class="card"><h3>Handmade</h3><p>El carácter artesanal forma parte del concepto y la experiencia de cada puro Mora Cigar.</p></div>
+      <div class="card"><h3>Presencia</h3><p>Más que un producto, una declaración de estilo: <em>No es humo, es presencia.</em></p></div>
+    </div>
+  </section>
+
+  <section id="premium" class="section">
+    <div class="product">
+      <div><img src="assets/mora-cigar-anillo.png" alt="Anillo Mora Cigar"></div>
+      <div>
+        <div class="eyebrow">Diseño exclusivo</div>
+        <h2>El sello Mora Cigar</h2>
+        <p class="section-intro">El anillo combina verde intenso con un acabado dorado inspirado en pan de oro, destacando el monograma MORA CIGAR como elemento central.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="contact">
+      <div>
+        <div class="eyebrow">Conectemos</div>
+        <h2>Contacto</h2>
+        <div class="contact-list">
+          <div class="contact-item">📞 <a href="tel:+18099861510">809 986 1510</a></div>
+          <div class="contact-item">✉️ <a href="mailto:moracigar@outlook.es">moracigar@outlook.es</a></div>
+          <div class="contact-item">◎ Instagram: @MoraCigar</div>
+          <div class="contact-item">f Facebook: Mora Cigar</div>
+        </div>
+      </div>
+      <div class="qr">
+        <img src="assets/qr-whatsapp.png" alt="Código QR para contactar a Mora Cigar">
+        <div class="qr-label">Escanéame para contactar</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 MORA CIGAR · PREMIUM HANDMADE · NO ES HUMO, ES PRESENCIA</footer>
+</body>
+</html>
